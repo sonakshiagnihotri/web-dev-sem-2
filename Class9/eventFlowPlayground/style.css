@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(218, 238, 255);
+}
+
+
+
+#grandparent {
+  background-color: rgb(197, 249, 166);
+  padding: 35px;
+  border-radius: 15px;
+  height: 170px;
+  width: 1000px;
+}
+
+span{
+       display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#parent {
+  background-color: rgb(164, 164, 255);
+  padding: 25px;
+  border-radius: 15px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  
+}
+#child{
+  background-color: rgb(255, 185, 234);
+  padding: 15px;
+  border-radius: 15px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#userInterac {
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+}
+#btn {
+  background-color: rgb(42, 156, 42);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  height: 35px;
+  border-color: rgb(164, 164, 255);
+}
+#clearlog {
+  background-color: skyblue;
+  border-radius: 15px;
+  height: 25px;
+  height: 30px;
+  border-color: aliceblue;
+}
+
+
+/* div { min-width: 200px; min-height: 150px; padding: 50px; border: 1px solid black; border-radius: 15px; } */ /* #header{ padding: 50px; border: 1px solid black; border-radius: 15px; } */ /* { padding: 50px; border: 1px solid black; border-radius: 15px; display: flex; } */
+#main {
+  display: flex;
+  justify-content: space-between;
+}
+#EventLog {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  border-radius: 15px;
+  background-color: rgb(251, 251, 251);
+  box-shadow: 10cm;
+  width: 450px;
+  height: 185px;
+}
+#all_logs {
+  max-height: 120px;  
+  overflow-y: auto;
+}

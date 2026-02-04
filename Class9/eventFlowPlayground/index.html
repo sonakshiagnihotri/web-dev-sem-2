@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventFlowPlayground</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+  </head>
+  <body>
+    
+    <div>
+      <div id="header">
+        <h3>Event Flow Playground</h3>
+        <p>Demonstrating Capturing, Bubbling & Propagation Control</p>
+      </div>
+      <div id="main">
+
+        <div id="userInterac">
+           
+            <div id="grandparent">
+            <span>GRANDPARENT</span>
+            <div id="parent">
+              <span>PARENT</span>
+              <div id="child">CHILD</div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div id="EventLog">
+
+            <h3>Event Log</h3>
+            <div id="all_logs">
+                
+            </div>
+            <button id="clearlog">Clear Log</button>
+            
+        </div>
+
+
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

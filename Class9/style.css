@@ -1,0 +1,21 @@
+#grandparent{
+    background-color:palegreen;
+    height: 1000px;
+    width: 1000px;
+    padding: 100px;
+    border: 2px;
+}
+#parent{
+    background-color:rgb(246, 157, 246);
+    height: 750px;
+    width: 750px;
+    padding: 100px;
+    border: 2px;
+}
+#child{
+    background-color:rgb(141, 231, 236);
+    height: 500px;
+    width: 500px;
+    padding: 100px;
+    border: 2px;
+}
