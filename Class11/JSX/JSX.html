@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+      <style>
+  body {
+    background-color: rgb(255, 255, 193);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .game {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+  }
+
+  .score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .box {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    cursor: pointer;
+    transition: 0.15s ease;
+  }
+</style>
+
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      //babel transpiler
+      //select that node
+      const rootEle = document.querySelector("#root");
+      let score=0;
+
+      function MoveBox() {
+        const handleClick = (e) => {
+            const box = e.target;
+            //Calc logic
+            // Generate random positions
+            // const randomLeft = Math.floor(Math.random() * 420);
+            // const randomTop = Math.floor(Math.random() * 420);
+
+            // Update box position
+            // box.style.left = randomLeft + "px";
+            // box.style.top = randomTop + "px";
+            box.style.left = Math.random()*420 + "px";
+            box.style.top = Math.random()*420 + "px";
+
+            score++;
+
+            document.getElementById("score").innerText="Score: "+score;
+
+        };
+        return (
+          <div className="game">
+            <div id="score" className="score">
+                Score: 0
+            </div>
+
+            <div
+              onClick={handleClick}
+              className="box"
+              style={{ left: "100px", top: "100px" }}
+            ></div>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<MoveBox />, rootEle);
+    </script>
+  </body>
+</html>
